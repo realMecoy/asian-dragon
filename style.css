@@ -1,0 +1,262 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "momospace", helvetica, serif;
+  width: 100%;
+}
+
+header {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 5%;
+}
+.dragon {
+  width: 5.8rem;
+  height: auto;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 8 1 5%;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 3.2rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: gold;
+}
+
+/*combo banner*/
+
+h2 {
+  color: ivory;
+  text-align: center;
+  font-size: 2.3rem;
+  padding-top: 20px;
+}
+
+/*menu headings*/
+
+h3 {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  line-height: 0.1em;
+  margin: 40px 0 20px;
+  font-size: 1.8em;
+}
+
+h3 span {
+  background: #fff;
+  padding: 0 10px;
+}
+
+/*catagory headings*/
+
+h4 {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Allura", cursive;
+  text-shadow: 4px 4px 4px #aaa;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.chinese-menu {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 42% 42%;
+  grid-gap: 3rem;
+  line-height: 2rem;
+}
+
+.spacing {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10%;
+  float: right;
+  flex: 1 1 8%;
+}
+
+.menu-item {
+  padding: 1%;
+}
+
+.starters {
+  align-self: center;
+}
+
+.chicken {
+  margin-top: 30px;
+}
+
+.noodles {
+  align-self: center;
+}
+
+.duck {
+  align-self: center;
+}
+
+.other {
+  align-self: center;
+}
+
+/*sushi menu*/
+
+img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+/*combos menu*/
+.combos-banner {
+  background-color: red;
+  height: 80px;
+  margin-top: 20px;
+}
+
+.describe {
+  background-color: yellow;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px !important;
+}
+.red-txt {
+  background-color: white;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.R75 {
+  font-size: 2rem;
+}
+.badge {
+  font-size: 1rem;
+  background-color: yellow;
+}
+
+/*footer*/
+footer {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 20px 0 20px 0;
+}
+
+footer img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.footer-items {
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.3rem;
+  flex-direction: column;
+  padding: 0;
+  margin: 5px;
+}
+
+.maps-logo {
+  width: 20px;
+}
+
+.my-logo {
+  width: 25px;
+  border-radius: 1px;
+}
+
+footer a {
+  text-decoration: none !important;
+  color: ivory;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+footer a:hover {
+  color: #272727;
+}
+
+/*back to top button*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 5px;
+  z-index: 99;
+  font-size: 50px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #272727;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+#myBtn:hover {
+  color: yellow;
+}
+
+.alignment {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  .chinese-menu {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 90%;
+    text-align: left;
+  }
+  .dragon {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .logo {
+    display: none;
+  }
+  .chinese-menu {
+    display: grid;
+    grid-template-columns: 90%;
+    text-align: left;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+}
